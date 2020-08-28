@@ -6,8 +6,10 @@ RUN touch /home/node/.bashrc | echo "PS1='\w\$ '" >> /home/node/.bashrc
 
 RUN npm config set cache /home/node/app/.npm-cache --global
 
-RUN npm i -g @nestjs/cli@7.4.1
+RUN npm i -g @nestjs/cli@7.4.0
 
 USER node
+
+CMD ["--host", "0.0.0.0"]]
 
 WORKDIR /home/node/app
