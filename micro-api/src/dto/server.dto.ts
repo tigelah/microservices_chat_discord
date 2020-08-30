@@ -4,6 +4,7 @@ export class ServerDto{
 
     @IsString()
     @IsNotEmpty()
+    
     name: string;
 
 
